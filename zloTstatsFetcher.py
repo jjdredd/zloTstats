@@ -27,6 +27,7 @@ def GetPostDate(n, soup):
     if msg == None:
         return None
 
+    # this is different for x.mipt.cc!
     regex = r" \([^)]*\) - (\d+\/\d+\/\d+ \d+:\d+)"
     m = re.match(regex, msg.contents[-1].string)
     if m == None:
