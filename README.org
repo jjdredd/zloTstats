@@ -1,3 +1,0 @@
-* zloTstats
-  ** fetch and analyze http://zlo.rt.mipt.ru posts
-  ** result: http://i.zlowiki.ru/161204_c0f5387e.png
