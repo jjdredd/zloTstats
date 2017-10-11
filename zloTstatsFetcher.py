@@ -13,7 +13,7 @@ def GetPost(n):
     page = requests.get(url)
 
     detect_text = "Это сообщение не существует или введено неправильно"
-    soup = BeautifulSoup(page.content)
+    soup = BeautifulSoup(page.content, "lxml")
 
     if soup.find(text = detect_text) != None:
         return None
@@ -38,7 +38,7 @@ def GetPostDate(n, soup):
 def main():
 
     start = 1
-    end = 9416253
+    end = 9522068
     stride = 10000
 
     fdb = open("output.db.txt", "a", buffering = 1)
